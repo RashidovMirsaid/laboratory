@@ -1,11 +1,11 @@
 import React from 'react';
 
-interface CardProps {
+interface CardsProps {
 	suit: 'diams' | 'hearts' | 'spades' | 'clubs';
 	rank: string;
 }
 
-const Card: React.FC<CardProps> = (props) => {
+const Cards: React.FC<CardsProps> = (props) => {
 	const suitMarks = (suit: string) => {
 		switch (suit) {
 			case 'diams':
@@ -33,4 +33,4 @@ const Card: React.FC<CardProps> = (props) => {
 	);
 };
 
-export default Card;
+export default Cards;
