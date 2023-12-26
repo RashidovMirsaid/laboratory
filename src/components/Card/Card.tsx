@@ -19,6 +19,21 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = (props) => {
+	const suitMarks = (suit: string) => {
+		switch (suit) {
+			case 'diams':
+				return '♦';
+			case 'hearts':
+				return '♥';
+			case 'spades':
+				return '♠';
+			case 'clubs':
+				return '♣';
+			default:
+				return '';
+		}
+	};
+
 	return (
 		<div className='Card'>
 			<div className='playingCards faceImages'>
@@ -32,4 +47,3 @@ const Card: React.FC<CardProps> = (props) => {
 };
 
 export default Card;
-fault Card;
