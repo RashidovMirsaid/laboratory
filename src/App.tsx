@@ -1,9 +1,9 @@
-import Card from './components/Card/Card';
+import Cards from './components/Cards/Cards';
 
 function App() {
 	return (
 		<div className='App'>
-			<Card rank='K' suit='diams' />
+			<Cards rank='K' suit='diams' />
 		</div>
 	);
 }
