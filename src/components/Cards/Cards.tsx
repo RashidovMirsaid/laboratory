@@ -26,7 +26,7 @@ const Cards: React.FC<CardsProps> = (props) => {
 			<div className='playingCards faceImages'>
 				<span className={`card rank-${props.rank} ${props.suit}`}>
 					<span className='rank'>{props.rank}</span>
-					<span className='rank'>{suitMarks(props.suit)}</span>
+					<span className='suit'>{suitMarks(props.suit)}</span>
 				</span>
 			</div>
 		</div>
