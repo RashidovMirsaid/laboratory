@@ -23,8 +23,8 @@ const Card: React.FC<CardProps> = (props) => {
 		<div className='Card'>
 			<div className='playingCards faceImages'>
 				<span className={`card rank-${props.rank} ${props.suit}`}>
-					<span className='rank'>${props.rank}</span>
-					<span className='rank'>${props.suit}</span>
+					<span className='rank'>{props.rank}</span>
+					<span className='rank'>{props.suit}</span>
 				</span>
 			</div>
 		</div>
@@ -32,3 +32,4 @@ const Card: React.FC<CardProps> = (props) => {
 };
 
 export default Card;
+fault Card;
